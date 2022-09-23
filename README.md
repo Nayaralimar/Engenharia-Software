@@ -24,4 +24,4 @@ JavaScript:</br>° Responsável pelos exercícios da aula 1 a 4.</br>
 React:</br>° Responsável pelos exercício da aula 5.</br>
 
 ## GitHub Pages:</br>
-Site publicado em: 
+Site publicado em: https://nayaralimar.github.io/Engenharia-Software/
