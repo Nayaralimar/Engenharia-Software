@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nayara de Lima Ramos">
+    <meta name="description" content="Landing page simulando informações do vestibular da FATEC">
+    <title>Letreiro</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+    <div id="root"></div>
+    <h2>VENHA  ESTUDAR  NA <h1> F   A   T   E   C</h1></h2>
+
+    <script type="text/babel">
+        function typeWrite(element){
+         const texto = element.innerHTML.split('');
+         element.innerHTML = '';
+         texto.forEach((letra, i) => {
+             setTimeout(() => element.innerHTML += letra, 75 * i);
+         });
+        }
+        const frase1= document.querySelector('h2');
+        typeWrite(frase1);
+        const frase2= document.querySelector('h1');
+        typeWrite(frase2);
+      </script>
+</body>
+</html>

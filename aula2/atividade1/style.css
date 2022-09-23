@@ -1,0 +1,15 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 200px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 30px;
+}

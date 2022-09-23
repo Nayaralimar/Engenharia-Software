@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nayara de Lima Ramos">
+    <meta name="description" content="Landing page de um jogo de advinhação de números">
+    <title>Jogo adivinha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300;1,400&family=Roboto:wght@300;400;700;900&family=Sarala&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="text/javascript" src="./script.js" defer></script>
+
+</head>
+
+<body>
+    
+    <h1>Jogo de advinhação</h1>
+
+    <p>Um número aleatório entre 1 a 100, foi selecionado. Você tem até 10 chances para tentar acertar.<br>Você será avisado se o seu palpite foi muito alto ou muito baixo.<br>Boa sorte!</p>
+
+    <div class="form">
+        <label for="campoPalpite">Digite o seu palpite: </label><input type="text" id="campoPalpite" class="campoPalpite">
+        <input type="submit" value="Enviar palpite" class="envioPalpite">
+    </div>
+
+    <div class="resultadoParas">
+        <p class="palpites"></p>
+        <p class="ultimoResultado"></p>
+        <p class="baixoOuAlto"></p>
+    </div>
+</body>
+
+</html>
