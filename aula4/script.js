@@ -1,23 +1,27 @@
-var list = document.querySelector('.output ul');
-var totalBox = document.querySelector('.output p');
-var total = 0;
-list.innerHTML = '';
-totalBox.textContent = '';
+let elementos = [];
+let btnAdicionar = document.getElementById("btnAdicionar");
 
-var products = [
-    
-];
+btnAdicionar.addEventListener("click", function () {
 
-for(var i = 0; i < products.length; i++) {
- var subArray = products[i].split(':');
- var nam = subArray[0];
- var price = Number(subArray[1]);
- total += price;
- itemText = nam + ' — $' + price;
+    let valor = document.getElementById("valores").value;
+    elementos.push(valor.toString());
 
- var listItem = document.createElement('li');
- listItem.textContent = itemText;
- list.appendChild(listItem);
-}
+    let oldOL = document.getElementById("list");
+    if (oldOL !== null)
+   { document.body.removeChild(oldOL); }
 
-totalBox.textContent = 'Total: $' + total.toFixed(2);
+    elementos.sort();
+
+    let elementoOL = document.createElement("OL");
+    elementoOL.setAttribute("id", "list");
+    elementos.forEach(element => {
+        let elementoLI = document.createElement("LI");
+        let elementBR = document.createElement("BR");
+        let textNode = document.createTextNode(element);
+        elementoLI.appendChild(textNode);
+        elementoOL.appendChild(textNode);
+        elementoOL.appendChild(elementBR);
+    });
+
+    document.body.appendChild(elementoOL);
+});

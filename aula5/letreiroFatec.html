@@ -18,20 +18,19 @@
 </head>
 <body>
     <div id="root"></div>
-    <h2>VENHA  ESTUDAR  NA <h1> F   A   T   E   C</h1></h2>
-
     <script type="text/babel">
-        function typeWrite(element){
-         const texto = element.innerHTML.split('');
-         element.innerHTML = '';
-         texto.forEach((letra, i) => {
-             setTimeout(() => element.innerHTML += letra, 75 * i);
-         });
+        let texto = 'Venha estudar na Fatec';
+        let textopassou = '';
+        let i = 0;
+
+        function letreiro() {
+            const element = (<h1>{textopassou = textopassou + texto[i]}</h1>);
+            i++;
+            if (i <= texto.length) {
+                ReactDOM.render(element, document.getElementById('root'));
+            }
         }
-        const frase1= document.querySelector('h2');
-        typeWrite(frase1);
-        const frase2= document.querySelector('h1');
-        typeWrite(frase2);
-      </script>
+        setInterval(letreiro, 300);
+    </script>
 </body>
 </html>
