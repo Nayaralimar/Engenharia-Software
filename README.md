@@ -20,8 +20,8 @@ https://www.conventionalcommits.org/
 Faça um clone do repositório. Execute a rota em seu servidor, url: http://127.0.0.1:5500/index.html, utilizei o Live Server (extensão do Visual Studio Code).
 
 ## Tecnologias utilizadas:</br>
-JavaScript:</br>° Responsável pelos exercícios da aula 1 a 4.</br>
-React:</br>° Responsável pelos exercício da aula 5.</br>
+JavaScript:</br>° Responsável pelos exercícios da aula 1 a 5.</br>
+React:</br>° Responsável pelos exercício da aula 6.</br>
 
 ## GitHub Pages:</br>
 Site publicado em: https://nayaralimar.github.io/Engenharia-Software/
