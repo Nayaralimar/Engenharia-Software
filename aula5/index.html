@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nayara de Lima Ramos">
+    <meta name="description" content="Landing page com um formulário com características de um carro para calcular o seu valor">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Carro - características</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Calcular valor do carro</h1>
+        <form>
+          <h2 class="p-4">Formulario.</h2>
+            <div class="row">
+                <div class="col">
+                    <label for="campoMarca" class="label-control">Marca: </label>
+                    <input type="text" name="campoMarca" id="campoMarca" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="campoModelo" class="label-control">Modelo: </label>
+                    <input type="text" name="campoModelo" id="campoModelo" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="campoAno" class="label-control">Ano: </label>
+                    <input type="number" name="campoAno" id="campoAno" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="campoCor" class="label-control">Cor: </label>
+                    <input type="text" name="campoCor" id="campoCor" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="campoKm" class="label-control">kilometragem: </label>
+                    <input type="number" name="campoKm" id="campoKm" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="campoValor" class="label-control">Valor Tabela Fipe: </label>
+                    <input type="number" name="campoValor" id="campoValor" class="form-control">
+                </div>
+            </div>    
+                
+            <div class="row">
+                <div class="col mt-3">
+                    <button type="submit" id="teste" class="btn btn-danger">Calcular</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Seu carro possuí:</h2>
+            </div>
+            <div class="col border border-primary p-3 rounded-3">
+                <h2 id="resultado"></h2>
+            </div>
+
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <h2>Valor do seu carro:</h2>
+            </div>
+            <div class="col border border-primary p-3 rounded-3">
+                <h2 id="resultado1"></h2>
+            </div>
+
+        </div>
+
+    
+    </div>
+    <script src="./script.js" defer></script>
+
+</body>
+</html>

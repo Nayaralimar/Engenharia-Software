@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nayara de Lima Ramos">
+    <meta name="description" content="Landing page simulando informações do vestibular da FATEC">
+    <title>Vestibular FATEC</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body class="container text-center">
+    <style type="text/css">
+        body {
+          background-image: url(../images/background.jpg);
+        }
+    </style>
+
+    <div class="row mt-5">
+        <div class="col border border-dark p-3 rounded-3 border border-5">
+            <div id="root">
+                <script type="text/babel">
+                    let texto = 'Venha estudar na Fatec';
+                    let textopassou = '';
+                    let i=0;
+
+                    function letreiro(){
+                        const element = (<h1>{textopassou = textopassou + texto[i]}</h1>);  
+                        i++;
+                        if (i <= texto.length){
+                           ReactDOM.render(element,document.getElementById('root'));
+                        }
+                        if(i > texto.length){
+                            cursos();
+                        }  
+                    }
+
+                    function cursos(){
+                        const teste = (<h1>{'Cursos: Agronegócio, Análise e Desenvolvimento de Sistemas, Eventos, Gestão Empresarial, Produção Agropecuária, Marketing'}</h1>);  
+                        ReactDOM.render(teste,document.getElementById('info'));
+
+                    }
+
+            
+                    setInterval(letreiro, 300);
+                </script>
+        
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row mt-5">
+        <div class="col border border-dark p-3 rounded-3 border border-5">
+            <div id="root">
+                <div id="info"></div>
+        
+            </div>
+
+        </div>
+    
+</body>
+</html>
